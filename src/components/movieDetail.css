@@ -1,0 +1,225 @@
+.movie-details-page,
+.search-page {
+    position: relative;
+    width: 100%;
+    top: 90px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.img-section {}
+
+.img-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.fine-details {
+    padding-left: 10px;
+    height: 30px;
+}
+
+.fine-details p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+
+.status {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(159, 0, 8);
+    border-radius: 15px;
+    padding: 0px 20px;
+}
+
+.rating {
+    height: 25px;
+    align-items: center;
+}
+
+.rating p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.buttons i {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(159, 0, 8);
+    border-radius: 100%;
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.buttons i:hover {
+    background-color: transparent;
+    color: rgb(0, 173, 192);
+}
+
+.stars i {
+    color: rgb(159, 0, 8);
+    font-size: 26px;
+}
+
+h5 {
+    color: rgb(214, 214, 214);
+}
+
+.company {
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    align-items: center;
+}
+
+.company p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(214, 214, 214);
+    font-size: 17px;
+}
+
+.recommended {
+    display: flex;
+    overflow: scroll;
+}
+
+.reviews {
+    color: rgb(139, 139, 139);
+}
+
+.review {
+    margin-bottom: 40px;
+}
+
+.author {
+    height: 60px;
+    display: flex;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.author-image {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.author-image img {
+    height: 100%;
+}
+
+.review-details {
+    color: rgb(194, 194, 194);
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumbnail,
+.video-container {
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+    margin: 7px;
+}
+
+.thumbnail img,
+.video {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.thumbnail .play {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+    bottom: 50%;
+    left: 40%;
+    z-index: 1000;
+}
+
+.thumbnail .play i {
+    font-size: 45px;
+    color: rgba(255, 255, 255, 0.823);
+}
+
+.trailer {
+    filter: brightness(90%);
+}
+
+.trailer:hover,
+.trailer:active {
+    filter: brightness(100%);
+}
+
+.related-movies {
+    height: 50vh;
+}
+
+@media only screen and (min-width: 1000px) {
+    .videos-section {
+        padding-left: 50px;
+    }
+    .trailer {
+        height: 600px;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .videos {
+        margin-bottom: 0px;
+    }
+    .img-section {
+        display: none;
+    }
+    .trailer {
+        height: 500px;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 600px) {
+    .thumbnail,
+    .video-container {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .trailer {
+        height: 500px;
+        width: 100%;
+        overflow: hidden;
+    }
+    i.bi {
+        font-size: 15px;
+    }
+    .related-movies {
+        width: 100%;
+    }
+    .thumbnail,
+    .video-container {
+        width: 100%;
+        height: 220px;
+    }
+}
